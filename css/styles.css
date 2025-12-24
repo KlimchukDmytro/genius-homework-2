@@ -38,14 +38,14 @@
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/Play-Regular.woff2') format('woff2'),
-       url('../fonts/Play-Regular.ttf') format('truetype');
+    url('../fonts/Play-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Play';
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/Play-Bold.woff2') format('woff2'),
-       url('../fonts/Play-Bold.ttf') format('truetype');
+    url('../fonts/Play-Bold.ttf') format('truetype');
 }
 
 :root {
@@ -107,6 +107,9 @@ address {
   background-color: transparent;
   border: 2px solid var(--beauty-landing-2-s2);
   color: var(--beauty-landing-2-c1);
+}
+.header-menu-list {
+  display: flex;
 }
 .link {
   text-decoration: none;
