@@ -65,6 +65,8 @@
   box-sizing: border-box;
 }
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 body {
@@ -108,16 +110,13 @@ address {
   border: 2px solid var(--beauty-landing-2-s2);
   color: var(--beauty-landing-2-c1);
 }
-.header-menu-list {
-  display: flex;
-}
+
 .link {
   text-decoration: none;
   color: var(--beauty-landing-2-c1);
 }
 .link:hover {
   color: var(--beauty-landing-2-s2);
-  font-weight: 700;
 }
 .section-title {
   font-family: var(--third-family);
@@ -127,6 +126,30 @@ address {
   color: var(--beauty-landing-2-c1);
   margin-bottom: 48px;
 }
+/* --------------HEADER-------------------- */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 32px 0;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-grow: 1;
+}
+.header-menu-list {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  flex-grow: 1;
+}
+.header-social-list {
+  display: flex;
+  gap: 32px;
+}
+
 /* ------------------HERO-------------------- */
 .hero-section {
   padding: 16px 0 126px 106px;
@@ -150,8 +173,19 @@ address {
 }
 
 /*----------------ABOUT US------------------- */
+.about-us-container {
+  display: flex;
+  gap: 32px;
+}
+.about-us-container-text {
+  max-width: 709px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 .about-us-title {
   text-align: left;
+  max-width: 529px;
 }
 .about-us-text {
   font-size: 22px;
@@ -172,15 +206,54 @@ address {
   font-size: 22px;
   line-height: 118%;
   text-align: center;
-  /* color: var(--beauty-landing-2-background) */
+
+  color: var(--beauty-landing-2-background);
+  max-width: 152px;
+  margin-bottom: 32px;
+}
+.our-procedures-list {
+  display: flex;
+  gap: 16px;
+  /* flex-wrap: wrap; */
+}
+/* .our-procedures-item{
+  flex-basis: calc(( - 32px) / 3); }  */
+
+.our-procedures-card {
+  border-radius: 120px 4px;
+  width: 344px;
+  height: 456px;
+  background: linear-gradient(
+    180deg,
+    rgba(1, 28, 68, 0) 47.4%,
+    rgba(1, 28, 68, 0.73) 82.66%,
+    #011c44 99.06%
+  );
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 /*-----------------CONTACTS------------------ */
+
+.contacts-container- {
+  display: flex;
+  gap: 32px;
+}
+.contacts-container-form {
+  border-radius: 32px;
+  width: 423px;
+  height: 481px;
+  padding: 48px 0;
+  background: var(--beauty-landing-2-c1);
+}
 .contacts-second-title {
   font-weight: 600;
   font-size: 22px;
   text-align: center;
-  /* color: var(--beauty-landing-2-background); */
+  color: var(--beauty-landing-2-background);
   margin-bottom: 32px;
+  max-width: 276px;
+  margin: 0 auto;
 }
 .contacts-second-title span {
   color: var(--beauty-landing-2-s2);
@@ -189,8 +262,15 @@ address {
 .footer {
   background: var(--beauty-landing-2-c1);
 }
+.footer-container {
+  display: flex;
+  gap: 186px;
+  padding: 56px 0;
+}
 .footer-nav {
   font-size: 16px;
+  display: flex;
+  gap: 186px;
 }
 .footer-nav-list {
 }
@@ -204,10 +284,14 @@ address {
 }
 .footer-address-link:hover {
   color: var(--beauty-landing-2-s2);
-  font-weight: 700;
+}
+.footer-social-list {
+  display: flex;
+  gap: 24px;
 }
 .footer-address-copyright {
   font-size: 13px;
   color: var(--beauty-landing-2-s5);
 }
+
 /*------------------MODEL------------------- */
