@@ -149,11 +149,25 @@ address {
   display: flex;
   gap: 32px;
 }
+.header-social-list-icon {
+  fill: var(--beauty-landing-2-c1);
+}
 
 /* ------------------HERO-------------------- */
 .hero-section {
   padding: 16px 0 126px 106px;
   margin-bottom: 0;
+  background-image: url(../images/do-the-procedure.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  /* background-size: cover; */
+  /* background-image: linear-gradient(
+    94deg,
+    #fff 9.65%,
+    rgba(255, 255, 255, 0.85) 26.08%,
+    rgba(255, 255, 255, 0.19) 52.74%,
+    rgba(255, 255, 255, 0) 74.46%
+  ); */
 }
 
 .hero-title {
@@ -211,6 +225,30 @@ address {
   max-width: 152px;
   margin-bottom: 32px;
 }
+.our-procedures-carousel-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--beauty-landing-2-c1);
+  border: 1px solid var(--beauty-landing-2-c1);
+  background: transparent;
+  cursor: pointer;
+}
+/* .carousel-btn-icone {
+  fill: var(--beauty-landing-2-c1);
+} не потрібно бо наслідуються*/
+.our-procedures-carousel-btn:hover {
+  background-color: var(--beauty-landing-2-s2);
+  border: 1px solid var(--beauty-landing-2-s2);
+  fill: var(--beauty-landing-2-background);
+}
+/* .our-procedures-carousel-btn:hover .carousel-btn-icone {
+  fill: var(--beauty-landing-2-background);
+} не потрібно бо наслідуються*/
+
 .our-procedures-list {
   display: flex;
   gap: 16px;
@@ -227,7 +265,7 @@ address {
     180deg,
     rgba(1, 28, 68, 0) 47.4%,
     rgba(1, 28, 68, 0.73) 82.66%,
-    #011c44 99.06%
+    var(--beauty-landing-2-c1) 99.06%
   );
   display: flex;
   align-items: flex-end;
@@ -261,6 +299,9 @@ address {
 /*------------------FOOTER------------------- */
 .footer {
   background: var(--beauty-landing-2-c1);
+  background-image: url(../images/medicine.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 .footer-container {
   display: flex;
@@ -288,6 +329,10 @@ address {
 .footer-social-list {
   display: flex;
   gap: 24px;
+  
+}
+.footer-social-list-icon {
+  color: var(--beauty-landing-2-background);
 }
 .footer-address-copyright {
   font-size: 13px;
