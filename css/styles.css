@@ -61,13 +61,18 @@
   --font4: 'Play', sans-serif;
   --third-family: 'Play', sans-serif;
 }
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+a {
+  display: inline-block;
 }
 body {
   color: var(--beauty-landing-2-c1);
@@ -211,11 +216,46 @@ address {
 }
 
 /*------------------WHY US------------------- */
+.why-us-section {
+  background: linear-gradient(
+    36deg,
+    #2b7fff 33.47%,
+    rgba(43, 127, 255, 0) 63.46%,
+    rgba(43, 127, 255, 0) 89.47%
+  );
+}
+
+.why-us-list {
+  display: flex;
+  gap: 56px;
+}
+.why-us-item-content {
+  margin: 24px 32px;
+}
+.why-us-item {
+  border-radius: 32px;
+  width: 316px;
+  height: 181px;
+  margin: 24px 32px;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
+  background: var(--beauty-landing-2-background);
+}
+.why-us-icon {
+  fill: var(--beauty-landing-2-s2);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
 .why-us-text {
   line-height: 133%;
   text-align: center;
 }
 /*--------------OUR PROCEDURES--------------- */
+.our-procedures-formats-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
 .our-procedures-second-title {
   font-size: 22px;
   line-height: 118%;
@@ -236,6 +276,7 @@ address {
   border: 1px solid var(--beauty-landing-2-c1);
   background: transparent;
   cursor: pointer;
+  flex-shrink: 0;
 }
 /* .carousel-btn-icone {
   fill: var(--beauty-landing-2-c1);
@@ -272,10 +313,17 @@ address {
   justify-content: center;
 }
 /*-----------------CONTACTS------------------ */
-
+.contacts-section {
+  padding-bottom: 94px;
+}
 .contacts-container- {
   display: flex;
   gap: 32px;
+}
+.contact-map {
+  flex-shrink: 0;
+  border: none;
+  border-radius: 32px;
 }
 .contacts-container-form {
   border-radius: 32px;
@@ -302,21 +350,34 @@ address {
   background-image: url(../images/medicine.png);
   background-repeat: no-repeat;
   background-position: right bottom;
+  padding: 56px 0;
 }
 .footer-container {
   display: flex;
-  gap: 186px;
-  padding: 56px 0;
+  gap: 20px;
 }
 .footer-nav {
   font-size: 16px;
+  flex-basis: 50%;
   display: flex;
-  gap: 186px;
+  gap: 20px;
 }
+.footer-logo,
 .footer-nav-list {
+  flex-grow: 1;
 }
+
 .footer-link {
   color: var(--beauty-landing-2-background);
+}
+.footer-address {
+  flex-basis: 50%;
+  display: flex;
+  gap: 20px;
+}
+.footer-address-list,
+.address-info {
+  flex-grow: 1;
 }
 .footer-address-link {
   font-size: 16px;
@@ -329,7 +390,6 @@ address {
 .footer-social-list {
   display: flex;
   gap: 24px;
-  
 }
 .footer-social-list-icon {
   color: var(--beauty-landing-2-background);
